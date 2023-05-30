@@ -12,12 +12,9 @@ import {
 import { feetToMeters } from '@archilogic/toolbox'
 import { angle, closestPointOnPolygons } from './common'
 
-export function placeHub(fpe /*, state*/){
-  // all the globals + conversion to metric
-  const wallOffsetInFt = 3
-  const maxHubDistanceInFt = 70
-  const wallOffset = feetToMeters({ feet: wallOffsetInFt })
+export function placeHub(fpe, maxHubDistanceInFt, wallOffsetInFt){
   const maxHubDistance = feetToMeters({ feet: maxHubDistanceInFt })
+  const wallOffset = feetToMeters({ feet: wallOffsetInFt })
   
   const productId = '!94d91d4c-06e8-42bc-aaf6-5852b19e59de'
 
