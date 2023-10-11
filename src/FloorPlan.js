@@ -46,7 +46,7 @@ const FloorPlan = ({ triggerQuery, model, modelUpdate }) => {
     hasLoaded = floorId
 
     spaceData = await fetch(
-      `${apiBaseURL}space?floorId=${floorId}&includeCustomFields=true&includeCustomAttributes=true&pubtoken=${token}`
+      `${apiBaseURL}space?floorId=${floorId}&includeCustomAttributes=true&pubtoken=${token}`
     ).then((response) => response.json())
 
     return fpe
